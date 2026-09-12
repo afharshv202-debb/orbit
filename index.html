@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Pilot</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="/">✦ <span>Pixel Pilot</span></a>
+        <button id="new-chat" class="new-chat">＋ New chat</button>
+        <div class="sidebar-note">Your own AI workspace<br /><small>Chat and create images.</small></div>
+      </aside>
+      <section class="workspace">
+        <header><span class="eyebrow">PERSONAL AI ASSISTANT</span><div class="mode-switch"><button class="mode active" data-mode="chat">Chat</button><button class="mode" data-mode="image">Create image</button></div></header>
+        <div id="thread" class="thread" aria-live="polite">
+          <article class="welcome"><div class="orb">✦</div><h1>What shall we make?</h1><p>Ask a question, draft something, solve a problem—or switch to image mode and create a visual.</p></article>
+        </div>
+        <form id="composer" class="composer">
+          <textarea id="prompt" rows="1" placeholder="Message Pixel Pilot…" aria-label="Message"></textarea>
+          <button id="send" type="submit" aria-label="Send message">↑</button>
+        </form>
+        <p id="hint" class="hint">AI can make mistakes. Check important information.</p>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
